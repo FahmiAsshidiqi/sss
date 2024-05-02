@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
+        
+        <!--Bootstrap!-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
+        <!--style and css!-->
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="fontawesome/css/all.css" />
+
+        <title></title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand me-auto" href="#">WebGIS</a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">WebGIS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 " href="#keterangan">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 " href="#galery">Galery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 " href="Artikel.html">Artikel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 " href="https://geoportal.bantulkab.go.id/#/">Sumber</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 " href="Peta.html">Peta</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <a href="#contact" class="login-button">Contact Us</a>
+                <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Hero section -->
+        <section class="hero-section">
+            <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+                <h1>Sebaran Apotek dan Jumlah Apoteker</h1>
+                <h2>dengan Area Kajian Kabupaten Bantul</h2>
+            </div>
+        </section>
+        <!-- End Hero section -->
+
+        <!-- Keterangan -->
+        <section class="keterangan" id="keterangan">
+            <h1>About</h1>
+            <p>Fokus pembahasan pada WebGIS kali ini yaitu Sebaran Apotek serta jumlah Apoteker di Kabupaten Bantul.</p>
+        
+            <div class="row">
+                <div class="keterangan-col">
+                    <h3>Apa itu Apotek?</h3>
+                    <p>Apotek adalah sarana pelayanan kesehatan untuk membantu
+                        meningkatkan kesehatan bagi masyarakat, apotek juga sebagai tempat
+                        praktik tenaga profesi apoteker dalam melakukan pekerjaan kefarmasian. 
+                        Pekerjaan kefarmasian menurut ketentuan umum pasal 1 di 
+                        dalam undang-undang RI No.23 tahun 1992 tentang
+                        kesehatan adalah pembuatan termasuk pengendalian mutu sediaan farmasi,
+                        pengamanan, pengadaan, penyimpanan dan distribusi obat, pengelolaan
+                        obat, pelayanan obat atas resep dokter.</p>
+                </div>
+                <div class="keterangan-col">
+                    <h3>Apa itu Apoteker?</h3>
+                    <p>Apoteker adalah sarjana farmasi yang telah lulus sebagai apoteker dan
+                        telah mengucapkan sumpah apoteker (PP 51, 2009 ; Permenkes RI, 2014).
+                        Apoteker sangat erat kaitannya dengan apotek, dimana apotek merupakan salah
+                        satu tempat dilakukannya pekerjaan kefarmasian, disamping penyaluran sediaan
+                        farmasi, dan perbekalan kesehatan lainnya kepada masyarakat. Sesuai dengan
+                        peraturan pemerintah, apotek harus dibawah tanggung jawab seorang apoteker.</p>
+                </div>
+            </div>
+        </section>
+        <!-- End Keterangan -->
+
+        <!-- Galery -->
+        <section class="galery" id="galery">
+            <h1>Galery Apotek</h1>
+            <p>Gambar berikut merupakan contoh Apotek yang berada di Bantul</p>
+        
+            <div class="row">
+                <div class="galery-col">
+                    <img src="images/assalaam.jpg">
+                    <h3>Apotek Assalaam</h3>
+                    <p>Jl. Gatot Subroto, Soropaten, Ringinharjo, Kec. Bantul, Bantul, Daerah Istimewa Yogyakarta Bantul, Daerah Istimewa Yogyakarta, Indonesia 55712.</p>
+                </div>
+                <div class="galery-col">
+                    <img src="images/madukismo.jpg">
+                    <h3>Apotek Madukismo Farma</h3>
+                    <p>Apotek Madukismo Farma berlokasi di 58CV+5P9, Tirtonirmolo, Kasihan, Rogocolo, Tirtonirmolo, Bantul, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55184.</p>
+                </div>
+                <div class="galery-col">
+                    <img src="images/wibi.jpg">
+                    <h3>Apotek Wibi Farma</h3>
+                    <p>Jl. Srandakan No.km 5,6, Pandak, Wijirejo, Kec. Pandak, Bantul, Daerah Istimewa Yogyakarta Bantul, Daerah Istimewa Yogyakarta, Indonesia 55761.</p>
+                </div>
+            </div>
+        </section>
+        <!-- End Galery -->
+
+        <!-- Contact starts -->
+        <section id="contact" class="contact section-padding">
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center pb-5">
+                            <h2>Contact Us</h2>
+                            <p>Saran ataupun masukan bisa para pembaca sampaikan melalui pesan di bawah ini.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-md-12 p-0 pt-4 pb-4">
+                        <form action="https://formsubmit.co/53307c3bd58465774c25a2c2bd3f81c4" method="POST" class="bg-light p-4 m-auto">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <input class="form-control" placeholder="Nama Lengkap" name="name" required type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <input class="form-control" placeholder="Email" name="email" required type="email" >
+                                        <input type="hidden" name="_autoresponse" value="Terima kasih telah memberikan saran ataupun komentar :)">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <textarea class="form-control" placeholder="Komentar" name="komentar" required rows="3"></textarea>
+                                    </div>
+                                </div><button class="btn btn-warning btn-lg btn-block mt-3" type="submit">Kirimkan</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact ends -->
+        
+        
+        <!-- Footer -->
+        <footer>
+            <div class="containerr">
+                <div class="sec aboutus">
+                    <h2>About Us</h2>
+                    <p>WebGis ini dibuat untuk memenuhi tugas Praktikum Sistem Informasi Geospasial oleh Fahmi Assshidiqi yang membahas tentang sebaran apotek dan jumlah apoteker yang berada di Kabupaten Bantul.</p>
+                    <ul class="sci">
+                        <li><a href="https://www.instagram.com/dqfahmii/"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/fahmi-asshidiqi-a3247426b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="https://github.com/FahmiAsshidiqi"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="sec quicklinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="Artikel.html">Artikel</a></li>
+                        <li><a href="Peta.html">Peta</a></li>
+                    </ul>
+                </div>
+                <div class="sec contact">
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span>34 Poncosiwalan Street<br>
+                            Babadan, Jawa Timur,<br>Indonesia</span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <p><a href="tel:085326688066">+64 853 2668 8066</a></p>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <p><a href="mailto:fahmiasshidiqi11@gmail.com">fahmiasshidiqi11@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </body>
+</html>
