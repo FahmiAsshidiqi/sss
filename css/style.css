@@ -1,0 +1,558 @@
+/*---- Navbar ----*/
+
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.3s color;
+    -webkit-transition: 0.3s color;
+    -moz-transition: 0.3s color;
+    -ms-transition: 0.3s color;
+    -o-transition: 0.3s color;
+}
+
+.login-button {
+    background-color: antiquewhite;
+    color: black;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: aquamarine;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -ms-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link:active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+/*---- Hero section ----*/
+
+.hero-section {
+    background: url(https://www.bhmpics.com/downloads/wallpaper-tentang-kesehatan/9.medical-team-technology.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 1.5em;
+}
+
+.hero-section h2 {
+    font-size: 1.2em;
+}
+
+/*---- Keterangan ----*/
+
+.keterangan {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.keterangan h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.keterangan p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.keterangan-col {
+    flex-basis: 45%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.keterangan-col h3 {
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.keterangan-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/*---- Galery ----*/
+
+.galery {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.galery-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.galery-col img {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.galery-col p {
+    padding: 0%;
+}
+
+.galery-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+.row .btn{
+    background-color: antiquewhite;
+    border-color: rgb(214, 199, 199);
+}
+
+.row .btn:hover {
+    background-color: #fff3f3;
+    border-color: rgb(214, 199, 199);
+}
+
+/*---- Footer ----*/
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .containerr {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .containerr .sec {
+    margin-right: 30px;
+}
+
+footer .containerr .sec.aboutus {
+    width: 40%;
+}
+
+footer .containerr h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .containerr h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #009970;
+}
+
+footer p{
+    color: #999;
+}
+
+.sci {
+    margin-top: 20px;
+    margin-left: -30px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.sci li a:hover {
+    background: #fff;
+}
+
+.sci li i  {
+    color: #009970;
+    font-size: 20px;
+}
+
+.quicklinks {
+    position: relative;
+    width: 25%;
+}
+
+.quicklinks ul li {
+    list-style: none;
+    margin-left: -30px;
+}
+
+.quicklinks ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.quicklinks ul li a:hover {
+    color: #fff;
+}
+
+.info {
+    background: #111;
+}
+
+.contact .info {
+    position: relative;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span {
+    color: #999;
+}
+
+.contact .info li a {
+    color: #999;
+    text-decoration: none;
+}
+
+
+/*------------------------ NEW ARTIKEL -----------------------*/
+
+/*---- Sub Hero ----*/
+
+.sub-hero-section {
+    background: url(https://www.bhmpics.com/downloads/wallpaper-tentang-kesehatan/9.medical-team-technology.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.sub-hero-section::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.sub-hero-section .container {
+    height: 50vh;
+    z-index: 1;
+    position: relative;
+}
+
+.sub-hero-section h1 {
+    font-size: 1.5em;
+    padding-top: 75px;
+}
+
+/*---- Artikel ----*/
+
+.artikel {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.artikel-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.artikel-col img {
+    width: 100%;
+}
+
+.artikel-col h1 {
+    padding-top: 0;
+}
+
+.artikel-col p {
+    padding: 15px 0 25px;
+}
+
+.red-btn {
+    border: 1px solid antiquewhite;
+    background: transparent;
+    color: antiquewhite;
+}
+
+.red-btn:hover {
+    color: #fff;
+}
+
+/*----------- Peta page --------------*/
+
+.map {
+    margin: 2cm;
+    padding: 300px 120px;
+    border-radius: 0.3cm;
+    -webkit-border-radius: 0.3cm;
+    -moz-border-radius: 0.3cm;
+    -ms-border-radius: 0.3cm;
+    -o-border-radius: 0.3cm;
+}
+
+/*----- Accordion ---*/
+
+.accordion {
+    width: 100%;
+    padding: auto;
+    margin-left: -0px;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    gap: 16px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.accordion:hover {
+    gap: 0;
+}
+
+.accordion h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 45px;
+    border-bottom: 2px solid #fff;
+    white-space: nowrap;
+}
+
+.accordion li {
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 80px;
+    border-radius: 50px;
+    opacity: 0.75;
+    cursor: pointer;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.accordion li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.accordion li,
+.accordion li img,
+.accordion li .isi,
+.accordion li .isi span {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.accordion li .isi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color: #fff;
+    padding: 15px;
+    background: #02022e;
+    background: 
+        linear-gradient(
+            0deg, rgb(0 0 0 / 70%) 10%,
+            rgb(255 255 255 / 0%) 100%
+        );
+    opacity: 0;
+    visibility: hidden;
+}
+
+.accordion li .isi span {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 50px;
+    translate: -300px 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.accordion li:hover {
+    flex: 0 1 260px;
+    scale: 1.1;
+    z-index: 10;
+    opacity: 1;
+}
+
+.accordion li:hover .isi {
+    opacity: 1;
+    visibility: visible;
+}
+
+.accordion li:hover span {
+    translate: -50% 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.acc-col-md-12 {
+    margin-top: 3cm;
+    margin-bottom: 1cm;
+}
+
+.section-header {
+    margin-bottom: -40px;
+    margin-top: auto;
+}
